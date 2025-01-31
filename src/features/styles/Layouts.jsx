@@ -12,17 +12,6 @@ export const ColumnFlex = styled(StandardFlex)`
   align-items: start;
 `;
 
-export const HeaderLayout = styled(StandardFlex)`
-  padding: 0 12rem;
-  border-bottom: 1px solid rgba(18, 20, 32, 0.1);
-`;
-
-export const HeaderFlex = styled(StandardFlex)`
-  flex: 1;
-  justify-content: start;
-  gap: 3rem;
-`;
-
 export const MainpageHR = styled.hr`
   color: #b7b5b3;
   margin: 4rem 0 3rem 0;

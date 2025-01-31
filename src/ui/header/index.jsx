@@ -1,20 +1,23 @@
 import { ImPieChart } from "react-icons/im";
 import SearchOrder from "../../features/Order/SearchOrder";
-import { HeaderList } from "../../features/styles/Lists";
 import {
+  Container,
   HeaderNavlink,
-  StyledHeaderLogoNavlink,
-} from "../../features/styles/Links";
-import { Container } from "./style";
+  ListContainer,
+  LogoContainer,
+} from "./style";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <Container>
       <div>
-        <StyledHeaderLogoNavlink to="/">
-          <ImPieChart size={40} />
-        </StyledHeaderLogoNavlink>
-        <HeaderList>
+        <LogoContainer>
+          <NavLink to="/">
+            <ImPieChart size={40} color="#ff674d" />
+          </NavLink>
+        </LogoContainer>
+        <ListContainer>
           <li>
             <HeaderNavlink to="/menu">Menu</HeaderNavlink>
           </li>
@@ -24,7 +27,7 @@ const Header = () => {
           <li>
             <HeaderNavlink to="/cart">Cart</HeaderNavlink>
           </li>
-        </HeaderList>
+        </ListContainer>
       </div>
 
       <SearchOrder />
