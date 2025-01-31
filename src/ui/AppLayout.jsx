@@ -1,12 +1,12 @@
 import React from "react";
 import { Outlet, useNavigation } from "react-router-dom";
 import Header from "./header";
-import Footer from "./Footer";
+import Footer from "./footer";
 import styled from "styled-components";
 
 const StyledMain = styled.main`
-  min-height: 80vh;
-  padding: 2rem;
+  min-height: 86vh;
+  max-height: 86vh;
 `;
 
 const AppLayout = () => {
