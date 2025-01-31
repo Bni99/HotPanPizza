@@ -1,30 +1,26 @@
 import React from "react";
-import {
-  BoldSpans,
-  MainpageHeading,
-  MainpageParaHeading,
-  MainpageSubHeading,
-} from "../styles/Headings";
+import { BoldSpans, MainpageParaHeading } from "../styles/Headings";
 import { FaHotjar } from "react-icons/fa6";
-import { MainpageHR, MainpageSection } from "../styles/Layouts";
+import { MainpageSection } from "../styles/Layouts";
 import { getMenu } from "../../services/restaurantapi";
 import BestSellers from "./BestSellers";
+import { Container } from "./style";
 
 const Home = () => {
   return (
-    <div>
-      <MainpageHeading>
+    <Container>
+      <h1>
         Hot Pan Pizza <FaHotjar size={45} style={{ position: "absolute" }} />
-      </MainpageHeading>
-      <MainpageSubHeading>
+      </h1>
+      <h4>
         Serving delicious pizza's since <BoldSpans>1986</BoldSpans>
-      </MainpageSubHeading>
-      <MainpageHR />
+      </h4>
+      <hr />
       <MainpageSection>
         <MainpageParaHeading>Our Best Sellers</MainpageParaHeading>
         <BestSellers />
       </MainpageSection>
-    </div>
+    </Container>
   );
 };
 

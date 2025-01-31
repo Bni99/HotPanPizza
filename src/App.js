@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home, { loader as bestSellerLoader } from "./features/Home/Home";
+import Home, { loader as bestSellerLoader } from "./features/Home";
 import Menu, { menuLoader } from "./features/Menu/Menu";
 import Cart from "./features/Cart/Cart";
 import Order, { loader as orderLoader } from "./features/Order/Order";
