@@ -8,7 +8,7 @@ export const StandardOrangeText = styled.span`
 `;
 
 export const StandardSubheading = styled.h4`
-  color: rgba(18, 20, 32, 0.5);
+  color: #1214207f;
   font-weight: thin;
   font-size: ${({ large }) => (large ? "1.4rem" : "1rem")};
   padding: 0.2rem;

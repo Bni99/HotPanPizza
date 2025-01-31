@@ -3,11 +3,11 @@ import Home, { loader as bestSellerLoader } from "./features/Home/Home";
 import Menu, { menuLoader } from "./features/Menu/Menu";
 import Cart from "./features/Cart/Cart";
 import Order, { loader as orderLoader } from "./features/Order/Order";
-import Error from "./ui/Error";
 import CreateOrder, {
   action as createOrderAction,
 } from "./features/Order/CreateOrder";
 import AppLayout from "./ui/applayout";
+import Error from "./ui/error";
 
 const router = createBrowserRouter([
   {

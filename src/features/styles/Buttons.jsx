@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { colors } from "../../utils";
 
 export const StandardBlueButton = styled.button`
-  background: #4281a4;
+  background: ${colors.blue};
   color: #fff8f0;
   width: fit-content;
   padding: 0.6rem 1rem;
@@ -11,4 +12,5 @@ export const StandardBlueButton = styled.button`
   gap: 2px;
   align-items: center;
   border: none;
+  cursor: pointer;
 `;
