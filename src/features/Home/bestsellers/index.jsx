@@ -1,19 +1,17 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
-import { BestSellersLayout } from "../styles/Layouts";
-import BestSellersMenuItem from "./BestSellersMenuItem";
+import BestSellersMenuItem from "../bestsellersmenuitem";
+import { Container } from "./style";
 
 const BestSellers = () => {
   const { data: menuItems } = useLoaderData();
-  console.log(menuItems);
   const bestSellers = menuItems?.filter((_, i) => i % 3 === 0);
-  console.log(bestSellers);
   return (
-    <BestSellersLayout>
+    <Container>
       {bestSellers?.map((bestseller) => (
         <BestSellersMenuItem bestseller={bestseller} />
       ))}
-    </BestSellersLayout>
+    </Container>
   );
 };
 

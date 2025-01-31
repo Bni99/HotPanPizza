@@ -2,7 +2,7 @@ import React from "react";
 import { BoldSpans } from "../styles/Headings";
 import { FaHotjar } from "react-icons/fa6";
 import { getMenu } from "../../services/restaurantapi";
-import BestSellers from "./BestSellers";
+import BestSellers from "./bestsellers";
 import { Container } from "./style";
 
 const Home = () => {
