@@ -10,6 +10,7 @@ export const ColumnFlex = styled(StandardFlex)`
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  border: ${({ border }) => border && "1px solid black"};
 `;
 
 export const MainpageHR = styled.hr`

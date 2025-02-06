@@ -7,12 +7,14 @@ const BestSellersMenuItem = ({ bestseller }) => {
   const { name, unitPrice, imageUrl, ingredients } = bestseller;
   return (
     <Container>
-      <ColumnFlex>
+      <div className="image-container">
         <img src={imageUrl} alt="pizza" />
-        <p className="price">{unitPrice}$</p>
-      </ColumnFlex>
+        <div className="overlay">
+          <p className="price">{unitPrice}$</p>
+        </div>
+      </div>
 
-      <div>
+      <div className="data-container">
         <ColumnFlex>
           <h1>{name}</h1>
           <p>
