@@ -3,10 +3,10 @@ import {
   StandardHeading,
   StandardOrangeText,
   StandardSubheading,
-} from "../styles/Headings";
-import { StandardBlueButton } from "../styles/Buttons";
-import { StandardFlex, StyledMenuItem } from "../styles/Layouts";
-import { StandardRoundedImage } from "../styles/Image";
+} from "../../styles/Headings";
+import { StandardBlueButton } from "../../styles/Buttons";
+import { StandardFlex, StyledMenuItem } from "../../styles/Layouts";
+import { StandardRoundedImage } from "../../styles/Image";
 
 const MenuItem = ({ pizza }) => {
   const { name, unitPrice, imageUrl, soldOut, ingredients } = pizza;

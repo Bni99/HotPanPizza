@@ -2,17 +2,17 @@ import React from "react";
 import { getMenu } from "../../services/restaurantapi";
 import { useLoaderData } from "react-router-dom";
 import MenuItem from "./MenuItem";
-import { StyledMenu } from "../styles/Layouts";
+import { Container } from "./style";
 
 const Menu = () => {
   const { data: pizzas } = useLoaderData();
 
   return (
-    <StyledMenu>
+    <Container>
       {pizzas?.map((pizza) => (
         <MenuItem key={pizza.id} pizza={pizza} />
       ))}
-    </StyledMenu>
+    </Container>
   );
 };
 

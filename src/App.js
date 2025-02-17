@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home, { loader as bestSellerLoader } from "./features/Home";
-import Menu, { menuLoader } from "./features/Menu/Menu";
+import Menu, { menuLoader } from "./features/Menu";
 import Cart from "./features/Cart/Cart";
 import Order, { loader as orderLoader } from "./features/Order/Order";
 import CreateOrder, {
