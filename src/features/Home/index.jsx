@@ -4,6 +4,8 @@ import { FaHotjar } from "react-icons/fa6";
 import { getMenu } from "../../services/restaurantapi";
 import BestSellers from "./bestsellers";
 import { Container } from "./style";
+import { Link } from "react-router-dom";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Home = () => {
   return (
@@ -16,7 +18,13 @@ const Home = () => {
       </h4>
       <hr />
       <section className="mainpage-section">
-        <h5 className="mainpage-paraheading">Our Best Sellers</h5>
+        <div className="best-seller-heading-container">
+          <h5>Our Best Sellers</h5>
+          <span>
+            <Link to="/menu">View Menu</Link>
+            <FaArrowRightLong size={12} />
+          </span>
+        </div>
         <BestSellers />
       </section>
     </Container>

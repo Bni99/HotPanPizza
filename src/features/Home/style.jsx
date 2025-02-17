@@ -12,11 +12,30 @@ export const Container = styled.div`
     position: relative;
   }
 
-  .mainpage-paraheading {
-    color: ${colors.black};
-    font-size: 1.3rem;
-    padding: 2rem 4rem 0;
-    font-weight: 500;
+  .best-seller-heading-container {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 1rem 4rem;
+    justify-content: space-between;
+    h5 {
+      color: ${colors.black};
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+
+    span {
+      border: 1px solid black;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 0.8rem;
+      color: ${colors.black};
+    }
   }
 
   .mainpage-subheading {
@@ -38,5 +57,6 @@ export const Container = styled.div`
     background: ${colors.lightOrange};
     border: 1px solid black;
     padding: 1rem 2rem;
+    position: relative;
   }
 `;
