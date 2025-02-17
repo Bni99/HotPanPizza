@@ -32,6 +32,11 @@ export const Container = styled.div`
     }
   }
 
+  a {
+    text-decoration: none;
+    color: ${colors.white};
+  }
+
   ul {
     list-style-type: none;
     padding: 0 4rem;

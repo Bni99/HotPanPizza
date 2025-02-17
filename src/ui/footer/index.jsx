@@ -3,6 +3,7 @@ import { Container } from "./style";
 import { colors } from "../../utils";
 import { FaFacebook, FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -17,7 +18,9 @@ const Footer = () => {
         </div>
         <ul>
           <li>About us :</li>
-          <li> Our Company</li>
+          <li>
+            <Link to="/our-company">Our Company</Link>
+          </li>
         </ul>
 
         <ul>
